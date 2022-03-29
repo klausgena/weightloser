@@ -1,0 +1,38 @@
+* Weightloser
+** Model
+1. [X] SQL schema opmaken
+2. [X] Voorbeeldgegevens voor tests
+3. [ ] De queries opstellen die vereist zijn
+   1. [ ] Ook caloriequery voor vandaag (of voor datum, is algemener)
+** View
+1. Alle templates maken:
+   - [ ] loginpagina/startpagina
+   - [ ] registratiepagina's
+     - [ ] hoeveel verliezen pagina
+     - [ ] resultaat dagelijkse intakepagina
+   - [ ] dashboard
+   - [ ] add cal pagina
+   - [ ] succespagina na add cal of mislukpagina
+   - [ ] footer
+   - [ ] header
+   - [ ] settings
+   - [ ] gewichtinvoerpagina
+   - [  ] gewicht- en caloriestatistiekpagina
+   - [ ] account deleten
+   - [ ] target wijzigen
+2. Alle e-mails maken:
+   - [ ] wekelijks: hoe goed ben je aan het loggen, hoeveel gewicht verloren
+   - [ ] maandelijks: hoeveel gewicht ben je verloren, hoe goed loggen
+   - [ ] bij target: succes/failure
+
+** Controller
+- [ ] Een pythonmodule maken voor de calorieformules
+  - [ ] helper toevoegen die zegt wanneer je obese zou zijn.
+- [ ] Helper die bepaalt hoeveel gewicht je bent verloren
+- [ ] helper die bepaalt hoe goed je gewichtsverlies verloopt
+- [ ] helper die bepaalt hoeveel calorien je dagelijks logt
+- [ ] helper die bepaalt hoeveel dagen je nog van je doel bent verwijderd
+- [ ] helper die bepaalt of je al je doel hebt bereikt of niet
+- [ ] helper met diettips en recepten (foolish)
+- [ ] helper die zegt wanneer je obese zult zijn.
+- [ ] helper die zegt hoeveel calorieen je vandaag al hebt verbruikt.
