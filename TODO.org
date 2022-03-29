@@ -24,6 +24,8 @@
    - [ ] wekelijks: hoe goed ben je aan het loggen, hoeveel gewicht verloren
    - [ ] maandelijks: hoeveel gewicht ben je verloren, hoe goed loggen
    - [ ] bij target: succes/failure
+3. PDF-bestand maken voor analoge calorietracking:
+   - [ ] met rijen van bolletjes
 
 ** Controller
 - [ ] Een pythonmodule maken voor de calorieformules
