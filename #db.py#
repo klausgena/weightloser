@@ -1,0 +1,6 @@
+# initialise the db with new data
+
+def init_db():
+    db = get_db()
+
+    with
