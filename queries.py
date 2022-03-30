@@ -25,17 +25,29 @@ def close_connection(exception):
 
 # Query functions for get, update, delete, make
 
-def query_db(query, args=(), one=False):
-    "fetch data from the database"
+def query_db(query, args=(), one=False, select=True):
+    '''fetch data from the database'''
     cur = get_db().execute(query, args)
-    rv = cur.fetchall()
-    cur.close()
-    return (rv[0] if rv else None) if one else rv
+    if select:
+        rv = cur.fetchall()
+        cur.close()
+        return (rv[0] if rv else None) if one else rv
+    else:
+        cur.close()
+        return
        
 # make, get, update and delete user
 
-def make_user():
-    pass
+def make_user(name, password, sex, kg, cm, age, activity):
+    '''Create user in the database'''
+    reg_date = # TODO date function
+    password = # TODO hash
+    target = 500 # change later?
+    query = '''INSERT INTO users 
+(name, password, reg_date, sex, kg, cm, age, activity, target)
+values (?,?,?,?,?,?,?,?,?)'''
+    query_db(query, (name, password, reg_date, sex, kg, cm, age, activity, target),
+             False, False)
 
 def get_user():
     pass
